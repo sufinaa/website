@@ -1,0 +1,299 @@
+:root {
+  --bg: #212121;
+  --main: #d10f11;
+  --second: #ffffff;
+  --shade: #560003;
+}
+
+@font-face {
+  font-family: "monocraft";
+  src: url("src/fonts/Monocraft-nerd-fonts-patched.ttf");
+}
+
+* {
+  text-decoration: none;
+  font-family: monocraft;
+  color: var(--second);
+}
+
+ul {
+  font-size: 1.2em;
+}
+
+body {
+  background-color: var(--bg);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+h1 {
+  font-family: monocraft;
+  color: var(--second);
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: medium;
+  font-size: 1.2em;
+}
+
+h2 {
+  font-family: monocraft;
+  color: var(--second);
+  text-decoration: none;
+  margin: 0.2rem;
+  padding: 0px;
+  font-size: 1.2em;
+}
+
+.front {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.sec1 {
+  margin: 0.2rem;
+  padding: 0.5rem;
+  overflow: auto;
+  /* border: 1px solid rgb(255, 255, 255); */
+  border-radius: 1rem;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  max-width: 27rem;
+}
+
+.sec2 {
+  margin: 0.2rem;
+  padding: 0.5rem;
+  overflow: auto;
+  /* border: 1px solid rgb(255, 255, 255); */
+  border-radius: 1rem;
+  justify-content: center;
+  text-align: left;
+  max-width: 27rem;
+}
+
+.profile {
+  background-color: var(--main);
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+}
+
+.profile h1 {
+  font-family: monocraft;
+  color: var(--second);
+  font-size: 2rem;
+}
+
+.profile h2 {
+  font-family: monocraft;
+  color: var(--bg);
+  font-size: 1.2rem;
+}
+
+.profile button {
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0rem;
+  font-family: monocraft;
+  color: var(--bg);
+  font-size: 3.5rem;
+  justify-self: left;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.profile img {
+  width: 5rem;
+  border-radius: 50%;
+  padding: 0.6rem;
+  animation: rotate 4s linear infinite;
+}
+
+.profile ls {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0.5rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro h1 {
+  color: var(--second);
+  font-family: monocraft;
+  font-size: 2em;
+  margin: 1rem;
+}
+.intro h2 {
+  color: var(--second);
+  font-family: monocraft;
+  font-size: 1.2em;
+  text-align: left;
+}
+.searchbar {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.searchbar button {
+  width: 99%;
+  border-radius: 2rem;
+  height: 2rem;
+  font-family: monocraft;
+  font-size: large;
+  background-color: var(--second);
+}
+
+.searchbar button:hover {
+  width: 99%;
+  border-radius: 2rem;
+  height: 2rem;
+  font-family: monocraft;
+  font-size: large;
+  background-color: var(--second);
+}
+
+.socials {
+  margin-top: 1rem;
+  /* display: flex; */
+  justify-content: center;
+  align-content: center;
+}
+
+.socials button {
+  align-self: center;
+  min-width: 45%;
+  margin: 0.24%;
+  margin-top: 1%;
+  background-color: var(--main);
+  color: aliceblue;
+  font-family: monocraft;
+  height: 2rem;
+  border-radius: 2rem;
+  border-width: 0;
+  font-size: 1.2rem;
+}
+
+.socials button:hover {
+  background-color: var(--shade);
+}
+
+.socials h1 {
+  color: rgba(0, 0, 0, 0);
+}
+
+.tabs button {
+  align-self: center;
+  width: 7rem;
+  margin: 0.1rem;
+  background-color: var(--main);
+  color: var(--second);
+  font-family: monocraft;
+  height: 1.5rem;
+  border-radius: 2rem;
+  border-width: 0;
+  font-size: 1rem;
+}
+
+.tabs button:hover {
+  background-color: var(--shade);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.tabs button.active {
+  background-color: var(--shade);
+}
+
+.tabcontent h1 {
+  color: var(--second);
+  font-family: monocraft;
+  font-size: 2rem;
+  margin-top: 0;
+}
+.tabcontent h2 {
+  color: var(--second);
+  font-family: monocraft;
+  margin-top: 0.3rem;
+}
+
+.tabcontent {
+  display: none;
+  overflow: auto;
+  max-width: 25.7rem;
+  margin: 1rem;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 1.5rem;
+  background-color: var(--main);
+  border-radius: 2rem;
+  animation: fadeEffect 1s;
+  box-shadow: 1.5rem 0.8rem var(--shade);
+}
+
+.footer-img {
+  max-height: 10rem;
+  max-width: 29rem;
+  margin-left: 1rem;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 2rem;
+}
+.footer-img img {
+  height: auto;
+  width: 29rem;
+}
+
+.second {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  justify-content: center;
+  margin: 5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .front {
+    display: block;
+    overflow: auto;
+    justify-content: center;
+    margin: 5rem;
+  }
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
