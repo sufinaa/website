@@ -272,6 +272,10 @@ h2 {
   margin: 5rem;
 }
 
+.searchbar button {
+  color: #121212;
+}
+
 @media only screen and (max-width: 900px) {
   .front {
     display: block;
