@@ -281,15 +281,8 @@ h2 {
     display: block;
     overflow: auto;
     justify-content: center;
-    margin: 5rem;
+    margin: 1rem;
   }
-.front {
-  display: flex;
-  align-items: center;
-  overflow: auto;
-  justify-content: center;
-  margin: .2rem;
-}
 }
 
 /* Go from zero to full opacity */
